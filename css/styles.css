@@ -321,9 +321,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 /* ----------Постійні клієнти---------- */
-.comp {
-  position: center;
-}
+
 .client-title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -347,6 +345,9 @@ body {
 }
 
 .comp-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: block;
   width: 170px;
   height: 92px;
