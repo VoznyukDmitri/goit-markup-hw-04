@@ -321,6 +321,9 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 /* ----------Постійні клієнти---------- */
+.comp {
+  position: center;
+}
 .client-title {
   margin-top: 0px;
   margin-bottom: 50px;
