@@ -11,6 +11,7 @@
   --color-link-address: rgba(255, 255, 255, 0.6);
   --color-title-hero: #ffffff;
   --color-border: #eeeeee;
+  --fill-icon: #afb1b8;
 }
 /* колір героя і підвалу #2F303A; */
 /* сірий  параграф  #757575; */
@@ -144,17 +145,26 @@ body {
   margin-right: 50px;
 }
 .link-nav {
-  padding: 0px;
+  /* padding: 0px; */
 }
 .contact-nav {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-text);
+  fill: var(--color-text);
+}
+.contact-nav svg {
+  margin-right: 10px;
 }
 .contact-nav:hover,
 .contact-nav:focus {
   color: var(--color-link-hover);
+  fill: var(--color-link-hover);
+}
+.iten-nav-contact a {
+  display: flex;
+  align-items: center;
 }
 
 /* Герой */
@@ -166,7 +176,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* max-width: 1600px; */
+  max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -320,6 +330,28 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+/* Іконки соцмереж */
+.soc-link {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--fill-icon);
+}
+.soc-link:not(:last-child) {
+  margin-right: 10px;
+}
+.soc-div {
+  display: flex;
+  padding: 0px 32px 30px;
+}
+.soc-link:hover,
+.soc-link:focus {
+  fill: var(--color-main-background);
+  background-color: var(--color-link-hover);
+}
 /* ----------Постійні клієнти---------- */
 
 .client-title {
@@ -337,9 +369,10 @@ body {
   padding: 0px;
 }
 .comp-link {
-  fill: #afb1b8;
+  fill: var(--fill-icon);
 }
-.comp-link:hover {
+.comp-link:hover,
+.comp-link:focus {
   fill: var(--color-link-hover);
   border-color: var(--color-link-hover);
 }
@@ -348,12 +381,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: block;
   width: 170px;
   height: 92px;
   border: 1px;
   border-radius: 5px;
-  border-color: #afb1b8;
+  border-color: var(--fill-icon);
   border-style: solid;
 }
 .client-iten:not(:last-child) {
@@ -366,6 +398,13 @@ body {
   padding-bottom: 60px;
 
   background-color: var(--color-footer-hero);
+}
+.footer,
+.address {
+  display: flex;
+}
+.address-div {
+  margin-right: 70px;
 }
 .address-real {
   font-style: normal;
@@ -401,6 +440,45 @@ body {
 .address-iten:not(:last-child) {
   margin-bottom: 9px;
 }
+
+/* Соцмережі футера */
+
+.title-futer-soc {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-logo-footer);
+}
+/* Іконки соцмереж футера*/
+.futer-soc-link {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-main-background);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.futer-soc-link:not(:last-child) {
+  margin-right: 10px;
+}
+.futer-soc-div {
+  display: flex;
+}
+.futer-soc-link:hover,
+.futer-soc-link:focus {
+  fill: var(--color-main-background);
+  background-color: var(--color-link-hover);
+}
+
 /* ----------------ПОРТФОЛІО-------------------- */
 
 /* фільтр-кнопки */
@@ -417,6 +495,9 @@ body {
 .filter-button:focus {
   color: var(--color-title-hero);
   background-color: var(--color-link-hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .filter-iten:not(:last-child) {
   margin-right: 8px;
@@ -447,7 +528,6 @@ body {
 
 .works {
   padding: 0px;
-  display: block;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -471,6 +551,12 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: var(--color-text);
+}
+.works-iten:hover {
+  border: 1px solid var(--color-border);
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* Контейнер */
 .section {
