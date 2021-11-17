@@ -402,6 +402,7 @@ body {
 .footer,
 .address {
   display: flex;
+  align-items: baseline;
 }
 .address-div {
   margin-right: 70px;
